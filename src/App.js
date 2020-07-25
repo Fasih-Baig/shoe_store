@@ -9,7 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import { Container, Row, Col, Card, Button, Carousel, Dropdown } from 'react-bootstrap';
-import { useTransition, useSpring, animated, config } from 'react-spring';
+import { useTransition, animated, config } from 'react-spring';
 import ShoppingCart from "@material-ui/icons/ShoppingCart";
 import Shoes from './shoe';
 import {
@@ -67,7 +67,12 @@ function Home() {
     leave: { opacity: 0 },
     config: config.molasses,
   })
-  useEffect(() => void setInterval(() => set(state => (state + 1) % 4), 10000), [])
+  useEffect(() => {
+      setInterval(() => {
+        return set(state => (state + 1) % 4);
+      }, 10000);
+  }, []);
+  
   return (
     <div style={{ backgroundColor: "white" }}>
       <Container style={{ marginBottom: "20px" }}>
@@ -89,7 +94,6 @@ function Home() {
         </div>
         <Row >
           <Col xs={12} className="homePage1">
-            
             <hr className="colorGray"/>
             <p style={{ color: "gray" }}>where all <span style={{ color: "black" }}>atheletes</span> belongs</p>
             <hr className="colorGray"/>
@@ -169,7 +173,7 @@ function ProdShoe() {
       <Container>
         <Row style={{ marginBottom: "20px" }}>
           <Col xs={6}>
-            <Carousel activeIndex={shoeIndex} onSelect={handleSelect}  interval="3000" className="sliderBorder">
+            <Carousel activeIndex={shoeIndex} onSelect={handleSelect} className="sliderBorder">
               <Carousel.Item>
                 <img
                   className="d-block w-100"

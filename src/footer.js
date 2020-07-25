@@ -19,19 +19,19 @@ export default function Footer() {
                         <Col xs={4}>
                             <ul className="listStyle">
                                 <li>GET HELP</li>
-                                <li><a href="#">Order Status</a></li>
-                                <li><a href="#">Delivery</a></li>
-                                <li><a href="#">Return</a></li>
-                                <li><a href="#">Payment</a></li>
-                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="/">Order Status</a></li>
+                                <li><a href="/">Delivery</a></li>
+                                <li><a href="/">Return</a></li>
+                                <li><a href="/">Payment</a></li>
+                                <li><a href="/">Contact Us</a></li>
                             </ul>
                         </Col>
                         <Col xs={4}>
                             <ul className="listStyle">
                                 <li>ABOUT NIKE</li>
-                                <li><a href="#">News</a></li>
-                                <li><a href="#">Careers</a></li>
-                                <li><a href="#">Investors</a></li>
+                                <li><a href="/">News</a></li>
+                                <li><a href="/">Careers</a></li>
+                                <li><a href="/">Investors</a></li>
                             </ul>
                         </Col>
                     </Row>
@@ -41,13 +41,13 @@ export default function Footer() {
                 <Col xs={3}>
                     <Row>
                         <Col xs={12} sm={6} md={4} style={{ marginBottom: "10px" }}>
-                            <a href="#"><img src={visa} alt="visa" /></a>
+                            <a href="/"><img src={visa} alt="visa" /></a>
                         </Col>
                         <Col xs={12} sm={6} md={4} style={{ marginBottom: "10px" }}>
-                            <a href="#"><img src={mastercard} alt="mastercard" /></a>
+                            <a href="/"><img src={mastercard} alt="mastercard" /></a>
                         </Col>
                         <Col xs={12} sm={12} md={4} style={{ marginBottom: "10px" }}>
-                            <a href="#"><img src={amazon} alt="amazon" /></a>
+                            <a href="/"><img src={amazon} alt="amazon" /></a>
                         </Col>
                     </Row>
                 </Col>
